@@ -1,0 +1,29 @@
+.header {
+    margin-left: 10%;
+    margin-right: 40%;
+    font-size: 50px;
+    color: blue;
+}
+
+body{
+    background-color: rgb(122, 106, 106);
+}
+
+button {
+    
+    padding: 5%;
+    margin-right: 40%;
+    margin-left: 5%;
+    margin-top: 1%;
+     border: black solid 5px;
+    text-align:center;
+    font-size:40px; 
+    color:red;
+    background-color:rgb(26, 26, 119);
+    width: 450px;
+    height:150px;
+}
+
+.main{
+    display:flex;
+}
