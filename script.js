@@ -12,7 +12,7 @@ let next = document.querySelector(".next");
 let back = document.querySelector(".back");
 let caseText1 = document.querySelector(".caseText1");
 let caseText2 = document.querySelector(".caseText2");
-let count = 1;
+let count = 101;
 caseImage2.style.display = 'none';
 caseText2.style.display = 'none';
 
@@ -38,6 +38,11 @@ titleBody.style.display = "none";
 caseBody.style.display = "flex";
 contactBody.style.display = "none";
 aboutBody.style.display = "none";
+count = 10001;
+caseText1.style.display = "flex";
+caseImage1.style.display = "flex";
+caseText2.style.display = "none";
+caseImage2.style.display = "none";
 })
 
 contactMe.addEventListener("click", function() {
@@ -68,21 +73,33 @@ aboutMe.style.transition = "ease 1s";
 next.addEventListener("click", function(){
 count++;
 console.log(count);
-if (count === 2){
+if (count % 2 === 0){
     caseText2.style.display = "flex";
     caseImage2.style.display = "flex";
     caseImage1.style.display = 'none';
     caseText1.style.display = 'none';
 }
-})
-back.addEventListener('click', function(){
-    count--;
-    console.log(count);
-if (count === 1){
+else{
     caseText1.style.display = "flex";
     caseImage1.style.display = "flex";
     caseImage2.style.display = 'none';
     caseText2.style.display = 'none';
+}
+})
+back.addEventListener('click', function(){
+    count--;
+    console.log(count);
+if (count % 2 === 1){
+    caseText1.style.display = "flex";
+    caseImage1.style.display = "flex";
+    caseImage2.style.display = 'none';
+    caseText2.style.display = 'none';
+}
+else{
+    caseText2.style.display = "flex";
+    caseImage2.style.display = "flex";
+    caseImage1.style.display = 'none';
+    caseText1.style.display = 'none';
 }
 })
     
