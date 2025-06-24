@@ -6,6 +6,15 @@ let titleBody = document.querySelector(".titleBody");
 let aboutBody = document.querySelector(".aboutBody");
 let caseBody = document.querySelector(".caseBody");
 let contactBody = document.querySelector(".contactBody");
+let caseImage1 = document.querySelector(".caseImage1");
+let caseImage2 = document.querySelector(".caseImage2");
+let next = document.querySelector(".next");
+let back = document.querySelector(".back");
+let caseText1 = document.querySelector(".caseText1");
+let caseText2 = document.querySelector(".caseText2");
+let count = 1;
+caseImage2.style.display = 'none';
+caseText2.style.display = 'none';
 
 aboutMe.addEventListener("click", function() {
 aboutMe.style.transform = "scale(1.4)";
@@ -55,3 +64,25 @@ contactMe.style.transition = "ease 1s";
 aboutMe.style.transform = "scale(1)";
 aboutMe.style.transition = "ease 1s";
 })
+
+next.addEventListener("click", function(){
+count++;
+console.log(count);
+if (count === 2){
+    caseText2.style.display = "flex";
+    caseImage2.style.display = "flex";
+    caseImage1.style.display = 'none';
+    caseText1.style.display = 'none';
+}
+})
+back.addEventListener('click', function(){
+    count--;
+    console.log(count);
+if (count === 1){
+    caseText1.style.display = "flex";
+    caseImage1.style.display = "flex";
+    caseImage2.style.display = 'none';
+    caseText2.style.display = 'none';
+}
+})
+    
