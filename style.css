@@ -100,7 +100,9 @@ margin: 30px;
 }
 
 .caseImage1,
-.caseImage2{
+.caseImage2,
+.caseImage3,
+.caseImage4{
     border-radius: 15px;
     width: 270px;
     height: 250px;
@@ -108,6 +110,8 @@ margin: 30px;
 }
 
 .caseText1,
-.caseText2{
+.caseText2,
+.caseText3,
+.caseText4{
  margin: 3%;
 }

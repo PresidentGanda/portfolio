@@ -8,11 +8,15 @@ let caseBody = document.querySelector(".caseBody");
 let contactBody = document.querySelector(".contactBody");
 let caseImage1 = document.querySelector(".caseImage1");
 let caseImage2 = document.querySelector(".caseImage2");
+let caseImage3 = document.querySelector(".caseImage3");
+let caseImage4 = document.querySelector(".caseImage4");
 let next = document.querySelector(".next");
 let back = document.querySelector(".back");
 let caseText1 = document.querySelector(".caseText1");
 let caseText2 = document.querySelector(".caseText2");
-let count = 101;
+let caseText3 = document.querySelector(".caseText3");
+let caseText4 = document.querySelector(".caseText4");
+let count = 10001;
 caseImage2.style.display = 'none';
 caseText2.style.display = 'none';
 
@@ -43,6 +47,10 @@ caseText1.style.display = "flex";
 caseImage1.style.display = "flex";
 caseText2.style.display = "none";
 caseImage2.style.display = "none";
+caseText3.style.display = "none";
+caseImage3.style.display = "none";
+caseText4.style.display = "none";
+caseImage4.style.display = "none";
 })
 
 contactMe.addEventListener("click", function() {
@@ -73,33 +81,89 @@ aboutMe.style.transition = "ease 1s";
 next.addEventListener("click", function(){
 count++;
 console.log(count);
-if (count % 2 === 0){
+if (count % 4 === 2){
     caseText2.style.display = "flex";
     caseImage2.style.display = "flex";
     caseImage1.style.display = 'none';
     caseText1.style.display = 'none';
+     caseImage3.style.display = 'none';
+    caseText3.style.display = 'none';
+     caseImage4.style.display = 'none';
+    caseText4.style.display = 'none';
+}
+else if (count % 4 === 3){
+    caseText2.style.display = "none";
+    caseImage2.style.display = "none";
+    caseImage1.style.display = 'none';
+    caseText1.style.display = 'none';
+     caseImage3.style.display = 'flex';
+    caseText3.style.display = 'flex';
+     caseImage4.style.display = 'none';
+    caseText4.style.display = 'none';
+}
+else if (count % 4 === 0){
+    caseText2.style.display = "none";
+    caseImage2.style.display = "none";
+    caseImage1.style.display = 'none';
+    caseText1.style.display = 'none';
+     caseImage3.style.display = 'none';
+    caseText3.style.display = 'none';
+     caseImage4.style.display = 'flex';
+    caseText4.style.display = 'flex';
 }
 else{
     caseText1.style.display = "flex";
     caseImage1.style.display = "flex";
     caseImage2.style.display = 'none';
     caseText2.style.display = 'none';
+     caseImage3.style.display = 'none';
+    caseText3.style.display = 'none';
+     caseImage4.style.display = 'none';
+    caseText4.style.display = 'none';
 }
 })
 back.addEventListener('click', function(){
     count--;
     console.log(count);
-if (count % 2 === 1){
-    caseText1.style.display = "flex";
-    caseImage1.style.display = "flex";
-    caseImage2.style.display = 'none';
-    caseText2.style.display = 'none';
-}
-else{
+if (count % 4 === 2){
     caseText2.style.display = "flex";
     caseImage2.style.display = "flex";
     caseImage1.style.display = 'none';
     caseText1.style.display = 'none';
+     caseImage3.style.display = 'none';
+    caseText3.style.display = 'none';
+     caseImage4.style.display = 'none';
+    caseText4.style.display = 'none';
+}
+else if (count % 4 === 3){
+    caseText2.style.display = "none";
+    caseImage2.style.display = "none";
+    caseImage1.style.display = 'none';
+    caseText1.style.display = 'none';
+     caseImage3.style.display = 'flex';
+    caseText3.style.display = 'flex';
+     caseImage4.style.display = 'none';
+    caseText4.style.display = 'none';
+}
+else if (count % 4 === 0){
+    caseText2.style.display = "none";
+    caseImage2.style.display = "none";
+    caseImage1.style.display = 'none';
+    caseText1.style.display = 'none';
+     caseImage3.style.display = 'none';
+    caseText3.style.display = 'none';
+     caseImage4.style.display = 'flex';
+    caseText4.style.display = 'flex';
+}
+else{
+    caseText1.style.display = "flex";
+    caseImage1.style.display = "flex";
+    caseImage2.style.display = 'none';
+    caseText2.style.display = 'none';
+     caseImage3.style.display = 'none';
+    caseText3.style.display = 'none';
+     caseImage4.style.display = 'none';
+    caseText4.style.display = 'none';
 }
 })
     
