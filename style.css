@@ -5,12 +5,12 @@
     background: none;
     margin-top: 1%;
     border: none;
-    padding: 0px;
+    padding: 3px;
 
 }
 
 .header:hover {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(63, 62, 62);
     transform: scale(1);
 }
 
@@ -32,14 +32,14 @@ button {
 }
 .back,
 .next{
-    margin-top: 15.7%;
+    margin-top: 18.5%;
     padding: 1%;
     font-size: 30px;
 }
 
 .back:hover,
 .next:hover{
-    background-color: #57113c;
+    background-color: #3d152e;
     transform: scale(1.2);
     transition: ease 1s;
 }
@@ -52,8 +52,6 @@ button {
 .CaseStudies{
      width: 350px;
     height:100px;
-    margin:2%;
-    
 }
 
 .ContactMe{
@@ -62,7 +60,7 @@ button {
 }
 
 button:hover {
-    background-color: #461a3c;
+    background-color: #381430;
     transform: scale(1.4);
     transition: ease 1s;
 }
@@ -74,15 +72,16 @@ button:hover {
 .aboutBody,
 .caseBody,
 .contactBody{
-   margin: 50px;
+   margin: 2%;
    background-color: rgb(163, 150, 150);
    border-radius: 20px;
    padding: 20px;
    display:none;
+
 }
 
 .titleBody{
-    margin: 50px;
+    margin: 2%;
    background-color: rgb(163, 150, 150);
    border-radius: 20px;
    padding: 20px;
@@ -90,13 +89,14 @@ button:hover {
 }
 
 .Selfie{
-    border-radius: 20px;
-    height: 30%;
-    width: 30%;
+    border-radius: 15px;
+    height: 300px;
+    width: 270px;
 }
 
 .Text{
 margin: 30px;
+
 }
 
 .caseImage1,
@@ -105,7 +105,7 @@ margin: 30px;
 .caseImage4{
     border-radius: 15px;
     width: 270px;
-    height: 250px;
+    height: 300px;
     
 }
 
@@ -113,5 +113,27 @@ margin: 30px;
 .caseText2,
 .caseText3,
 .caseText4{
- margin: 3%;
+ margin: 4%;
+}
+
+.contactText{
+    font-size: 27px;
+    margin: 30px;
+    margin-top: 8%;
+}
+
+.contactImage{
+    height: 300px;
+    width: 315px;
+    border-radius: 20px;
+}
+
+h2{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.homeText{
+    font-size: 22px;
+    margin: 2%;
 }
